@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Quote Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gelasio:ital@1&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styling/style.css" />
+  </head>
+  <!-- creating a preloader animation -->
+  <div class="preloaderbg" id="preloader">
+    <div class="loader" ></div>
+  </div>
+  <!-- the time, quote and logout section on the right -->
+    <div class="side" id="sidething">
+      <div class="time">
+        <h1 id="time">00:00</h1>
+      </div>
+      <div class="quotebox">
+        <div class="quote">
+          <p id="quote">
+          </p>
+          <p id="author"></p>
+        </div>
+      </div>
+      <div class="logout">
+        <a href="./html pages/login.html" class="logoutlink">Logout</a>
+      </div>
+    </div>
+  <!-- credit section for photographer -->
+    <div class="photoguy" id="photoguy">
+      <p>Photo by </p>
+    </div>
+  <!-- main to-do section -->
+    <div class="wrapper">
+      <div class="task-input">
+        <input type="text" placeholder="Add a new task">
+      </div>
+      <div class="controls">
+        <div class="filters">
+          <span class="active" id="all">All</span>
+          <span id="pending">Pending</span>
+          <span id="completed">Completed</span>
+        </div>
+        <button class="clear-btn">Clear All</button>
+      </div>
+      <ul class="task-box"></ul>
+    </div>
+    <script src="./scripts/script.js"></script>
+  <!-- script for using loading animation -->
+    <script>
+      var loader = document.getElementById("preloader");
+      window.addEventListener("load", function(){
+        loader.style.display = "none";
+      })
+    </script>
+  </body>
+</html>
