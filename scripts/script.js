@@ -5,9 +5,9 @@ photoguys[0] = "Aron Visuals"
 photoguys[1] = "Roberto Nickson"
 photoguys[2] = "Anna Shvetz"
 const photos = []
-photos[0] = "url(images/quotebg.png)"
-photos[1] = "url(images/quotebg1.jpg)"
-photos[2] = "url(images/quotebg2.jpg)"
+photos[0] = "url(../images/quotebg.png)"
+photos[1] = "url(../images/quotebg1.jpg)"
+photos[2] = "url(../images/quotebg2.jpg)"
 
 //pick a random photo to display
 const randomInt = (max, min) => Math.round(Math.random() * (max - min)) + min;
